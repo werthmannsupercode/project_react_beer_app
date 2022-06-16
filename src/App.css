@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Roboto Slab', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Startseite {
+    padding: 5vh 5vw;
 }
 
-.App-link {
-  color: #61dafb;
+.Startseite a {
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Startseite a img {
+    width: 90vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Startseite a h2 {
+    background-color: rgb(247, 204, 92);
+    color: white;
+    font-size: 3rem;
+    padding: 2vh 3vw;
+    margin: -1vh 0 0 0;
+}
+
+.Startseite a p {
+    font-size: 1.6rem;
+    color: black;
+    padding: 1vh 1vw 3vh 1vw;
+}
+
+.LinkStartseite {
+    background-color: rgb(247, 204, 92);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.LinkStartseite p {
+    background-color: white;
+    font-size: 4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1vh auto;
+}
+
+.BeerItem {
+    padding: 5vh 5vw;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+.BeerItem img {
+    width: 20vw;
+    height: 25vh;
+    object-fit: contain;
+    margin: 0 10vw;
+}
+
+.BeerItem div {
+    width: 50vw;
+}
+
+.BeerItem div h2 {
+    font-size: 1.8rem;
+}
+
+.BeerItem div h3 {
+    color: rgb(247, 204, 92);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.BeerItem div p {
+    font-size: 1.5rem;
+    padding: 3vh 0;
+}
+
+.BeerItem div a {
+    background-color: rgb(247, 204, 92);
+    color: white;
+    padding: 1vh 4vw;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.randomBeer {
+    margin-bottom: 20vh;
+}
+
+.randomBeer img {
+    width: 80vw;
+    height: 30vh;
+    object-fit: contain;
+    object-position: center;
+    margin: 5vh 10vw;
+}
+
+.randomBeer h2 {
+    font-size: 3rem;
+    padding: 0 10vw;
+}
+
+.randomBeer h3 {
+    color: rgb(247, 204, 92);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1vh 10vw;
+}
+
+.brewed,
+.attenuation {
+    padding: 0 10vw;
+    color: grey;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 1.5rem;
+    padding: 3vh 10vw;
+}
+
+.LinkBack {
+    background-color: rgb(247, 204, 92);
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0.5vh 3vw;
+    border-radius: 50%;
+    margin: 2vh 0 0 10vw;
+    display: inline-block;
+}
+
+.LinkBack:hover,
+.LinkStartseite p:hover {
+    box-shadow: 0 0 10px grey;
 }
